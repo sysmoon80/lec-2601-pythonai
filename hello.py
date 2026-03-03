@@ -8,3 +8,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    printx("this is fault grammer code")
