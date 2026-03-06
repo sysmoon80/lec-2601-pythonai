@@ -3,7 +3,7 @@
 아래 반지름을 사용하여 원의 둘레와 원의 넓이를 구하시오. 
 ㅇ 원주율 : 3.141592
 ㅇ 반지름 : 7
- (원의 둘레 공식 : 2πr , 원의 넓이 공식 :       )
+ (원의 둘레 공식 : 2πr , 원의 넓이 공식 : 2πr²)
 '''
 
 # 변수 할당
@@ -15,6 +15,7 @@ circumference = 2 * pi * radius
 
 # 원의 넓이 계산 (πr²)
 area = pi * radius ** 2
+# area = pi * radius * radius # radius ** 2 는 radius * radius 와 동일한 표현입니다.
 
 # 결과 출력
 print(f"원주율: {pi}")

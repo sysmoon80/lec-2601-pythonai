@@ -22,3 +22,4 @@ print(f"수학 점수: {math_score}")
 print(f"영어 점수: {english_score}")
 print(f"합계: {total_score}")
 print(f"평균: {average_score}")
+print(f"평균: {average_score:3.1f}") # 100.0 만점 기준으로 평균 점수는 소수점 한 자리까지 표현
