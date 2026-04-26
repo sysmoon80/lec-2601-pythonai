@@ -16,3 +16,5 @@ while i < 100:
     left(59)                 # 살짝 어긋난 각도로 나선형 생성
     length = length + 3      # 선이 점점 길어짐
     i = i + 1
+
+done()
