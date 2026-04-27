@@ -33,21 +33,26 @@ screen.setup(width=900, height=600)
 screen.title("Turtle RPG Battle")
 screen.bgcolor("white")
 
+
+# 각각의 터틀 객체를 만들어 캐릭터와 UI를 그리는 데 사용
 ui_pen = t.Turtle(visible=False)
 ui_pen.hideturtle()
 ui_pen.speed(0)
 ui_pen.penup()
 
+# 캐릭터를 그리는 터틀 객체
 player_drawer = t.Turtle(visible=False)
 player_drawer.hideturtle()
 player_drawer.speed(0)
 player_drawer.penup()
 
+# 몬스터를 그리는 터틀 객체
 monster_drawer = t.Turtle(visible=False)
 monster_drawer.hideturtle()
 monster_drawer.speed(0)
 monster_drawer.penup()
 
+# 게임 상태를 저장하는 딕셔너리
 state = {"message": "Press SPACE to attack, R to reset"}
 
 
@@ -119,11 +124,13 @@ def render():
 
 # 4. attack() 함수
 def attack():
+    # 전투가 끝난 상태에서 공격을 시도하면 메시지만 업데이트하고 종료
     if player["hp"] <= 0 or monster["hp"] <= 0:
         state["message"] = "Battle is over. Press R to reset"
         render()
         return
 
+    # 플레이어 공격
     player_damage = random.randint(player["atk"] - 5, player["atk"] + 5)
     monster["hp"] -= player_damage
 
@@ -133,6 +140,7 @@ def attack():
         render()
         return
 
+    # 몬스터 공격
     monster_damage = random.randint(monster["atk"] - 4, monster["atk"] + 4)
     player["hp"] -= monster_damage
 
