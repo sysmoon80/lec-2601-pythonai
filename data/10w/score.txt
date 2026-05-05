@@ -1,0 +1,5 @@
+math:85
+english:90
+science:78
+history:92
+korean:88
