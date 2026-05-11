@@ -4,7 +4,7 @@
 
 import pandas as pd
 
-name = ['홍길동', '김유신', '강감찬', '라이온', '유관순']
+name = ["홍길동", "김유신", "강감찬", "라이온", "유관순"]
 age = [20, 22, 21, 19, 24]
 
 profile = pd.Series(age, index=name)
