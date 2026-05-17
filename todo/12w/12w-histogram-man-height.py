@@ -1,12 +1,8 @@
-# 해보기2 - 남자 키 데이터 히스토그램
-# 2020 Health Screenings Man Height Histogram
-
 import pandas as pd
 import matplotlib.pyplot as plt
 
 data = pd.read_excel("data/12w/health_screenings_2020_1000ea.xlsx")
 
-# 예시 데이터 생성 (실제로는 엑셀 파일에서 로드)
 mandata = data.loc[data.gender == 1.0, ["gender", "height"]]
 plt.figure(figsize=(10, 6))
 plt.hist(mandata["height"], bins=20, label="Man")

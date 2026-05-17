@@ -13,6 +13,4 @@ result = pd.DataFrame(
     {"기관수": region_count, "비율(%)": (region_count / total * 100).round(2)}
 )
 
-result = result.sort_values(by="기관수", ascending=False)
-
 print(result)
